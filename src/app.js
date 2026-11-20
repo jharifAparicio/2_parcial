@@ -21,6 +21,7 @@ function createApp(dbRepository) {
   app.get('/health', (req, res) => {
     res.status(200).json({
       status: 'ok',
+      servicio: 'api-catalogo-libros',
       version: process.env.APP_VERSION || '1.0.0'
     });
   });
